@@ -53,3 +53,20 @@
   - 모든 노드가 2개의 자식 노드를 갖고 있다
   - 모든 leaf 노드는 동일한 depth 또는 level을 갖는다
 
+## 이진 탐색 트리(BST)
+<img src="https://i.imgur.com/po0R4GB.png">
+출처 : (https://ratsgo.github.io/data%20structure&algorithm/2017/10/22/bst/)
+
+##
++ 왼쪽, 오른쪽 값들이 각각 크기에 따라 정렬되어 있는 트리
++ 노드.left.value < 노드.value
++ 노드.value > 노드.right.value
++ 탐색 시간 복잡도 : O(log n)
+  - but, 균형 깨진 경우 시간 복잡도 : O(n)에 근접 => 비효율적(BST 장점X)
+
+## 자기 균형 이진 탐색 트리
++ 삽입, 삭제 시 자동으로 높이를 작게 유지하는 노드 기반의 이진 탐색 트리
++ Height를 가능한 한 작게 유지한 트리
++ AVL 트리
++ 레드-블랙 트리
+  - 자바의 Haspmap : 해시 테이블의 개별 체이닝 시 연결 리스트와 함께 레드-블랙 트리 병행해 저장 => 효율적
